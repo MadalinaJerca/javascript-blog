@@ -1,0 +1,46 @@
+<h1>JavaScript Blog</h1>
+<h2>Tools and Technologies used</h2>
+<ul>
+<li>11ty aka eleventy - https://www.11ty.dev/</li>
+<li>Bulma CSS - https://bulma.io/</li>
+</ul>
+<h2>Steps I used to create the blog</h2>
+<ol>
+<li>
+<p>Create your setup
+a. Run <code>npm install -y</code> in your project directory. This creates package.json file.
+b. Run <code>npm install --save-dev @11ty/eleventy</code>.
+This install Eleventy to your computer and creates package-lock.json file and node_modules folder.
+c. Create a file called .gitignore by running <code>touch .gitignore</code> in your site’s root directory and add ignored files inside it.
+d. Add README.md file
+e. Run <code>npm install -g @11ty/eleventy</code>. This will compile any files matching valid input template file extensions
+(.md is one of them) in the current directory into the output folder (defaults to _site). Eg: Writing _site/README/index.html from ./README.md.</p>
+</li>
+<li>
+<p>Create a basic layout:
+a. Create a folder called _includes in your site’s root directory using <code>mkdir _includes</code> command.
+b. Inside it, create a file named base.liquid by using <code>cd _includes</code> and <code>touch base.liquid</code>
+c. In base.liquid file, paste the basic HTML, which will be inserted into every page of our site.</p>
+</li>
+<li>
+<p>Now, your folder structure should look something like this:
+your-blog/
+_includes/
+base.liquid   # contains the HTML from above
+node_modules/     # ignore this in .gitignore file
+.gitignore
+package-lock.json
+package.json<br>
+README.md</p>
+</li>
+<li>
+<p>Create your homepage
+Going back in your site’s root directory (next to node_modules, package.json, etc.), create a file called index.md.
+TO KNOW: The content from index.md will be populated in base.liquid .</p>
+</li>
+<li>
+<p>Start your server
+Run this command <code>npx @11ty/eleventy --serve</code>.
+A _site folder is automatically generated in which the index.html file will be automatically created.</p>
+</li>
+</ol>

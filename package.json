@@ -1,0 +1,26 @@
+{
+  "name": "javascript-blog",
+  "version": "1.0.0",
+  "description": "Learning JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadalinaJerca/javascript-blog.git"
+  },
+  "keywords": [
+    "js",
+    "11ty"
+  ],
+  "author": "Madalina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadalinaJerca/javascript-blog/issues"
+  },
+  "homepage": "https://github.com/MadalinaJerca/javascript-blog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
