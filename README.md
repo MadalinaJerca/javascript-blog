@@ -49,3 +49,5 @@
 - Inside the posts folder, create a file called ``posts.json`` to assign a default layout like base.liquid.
 - Going back to the ``_includes`` folder, create a new file called ``nav.liquid`` from where the user can access the home page and the first post's content.
 - In ``base.liquid`` file, above ``{{ content }}``, add this: ``{% include nav.liquid %}``.
+
+7. Add styling
