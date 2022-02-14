@@ -1,46 +1,76 @@
-<h1>JavaScript Blog</h1>
-<h2>Tools and Technologies used</h2>
+<h1>Tools and Technologies used</h1>
 <ul>
 <li>11ty aka eleventy - https://www.11ty.dev/</li>
 <li>Bulma CSS - https://bulma.io/</li>
 </ul>
-<h2>Steps I used to create the blog</h2>
+<h1>Prerequisites</h1>
+<ul>
+<li>Install npm.</li>
+<li>Sign up for a GitHub account. GitHub will be part of the build process for publishing your site.</li>
+<li>Create a folder for your project and open it in your text editor (I personally use VS Code).</li>
+</ul>
+<h1>Basic steps to create a blog from zero</h1>
 <ol>
-<li>
-<p>Create your setup
-a. Run <code>npm install -y</code> in your project directory. This creates package.json file.
-b. Run <code>npm install --save-dev @11ty/eleventy</code>.
-This install Eleventy to your computer and creates package-lock.json file and node_modules folder.
-c. Create a file called .gitignore by running <code>touch .gitignore</code> in your site’s root directory and add ignored files inside it.
-d. Add README.md file
-e. Run <code>npm install -g @11ty/eleventy</code>. This will compile any files matching valid input template file extensions
-(.md is one of them) in the current directory into the output folder (defaults to _site). Eg: Writing _site/README/index.html from ./README.md.</p>
-</li>
-<li>
-<p>Create a basic layout:
-a. Create a folder called _includes in your site’s root directory using <code>mkdir _includes</code> command.
-b. Inside it, create a file named base.liquid by using <code>cd _includes</code> and <code>touch base.liquid</code>
-c. In base.liquid file, paste the basic HTML, which will be inserted into every page of our site.</p>
-</li>
-<li>
-<p>Now, your folder structure should look something like this:
-your-blog/
-_includes/
-base.liquid   # contains the HTML from above
-node_modules/     # ignore this in .gitignore file
-.gitignore
-package-lock.json
-package.json<br>
-README.md</p>
-</li>
-<li>
-<p>Create your homepage
-Going back in your site’s root directory (next to node_modules, package.json, etc.), create a file called index.md.
-TO KNOW: The content from index.md will be populated in base.liquid .</p>
-</li>
-<li>
-<p>Start your server
-Run this command <code>npx @11ty/eleventy --serve</code>.
-A _site folder is automatically generated in which the index.html file will be automatically created.</p>
-</li>
+<li>Create your setup with Eleventy</li>
 </ol>
+<ul>
+<li>Open your blog’s folder in VS Code.</li>
+<li>Run npm install -y in your project directory.
+<ul>
+<li>This creates package.json file.</li>
+</ul>
+</li>
+<li>Run npm install --save-dev @11ty/eleventy.
+<ul>
+<li>This install Eleventy to your computer and creates package-lock.json file and node_modules folder.</li>
+</ul>
+</li>
+<li>Create a file called .gitignore in your site’s root directory and add ignored files inside it.</li>
+<li>Add README.md file</li>
+<li>Run npm install -g @11ty/eleventy.
+<ul>
+<li>This will compile any files matching valid input template file extensions (.md is one of them) in the current directory into the output folder (defaults to _site).</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>Create a basic layout</li>
+</ol>
+<ul>
+<li>Create a folder called _includes in your site’s root directory using mkdir _includes command.</li>
+<li>Inside it, create a file named base.liquid by using cd _includes and touch base.liquid</li>
+<li>In base.liquid file, paste the basic HTML, which will be inserted into every page of our site.</li>
+</ul>
+<ol start="3">
+<li>Now, your folder structure should look like this:</li>
+</ol>
+<ul>
+<li>your-blog/
+<ul>
+<li>_includes/
+<ul>
+<li>base.liquid # contains the basic HTML</li>
+</ul>
+</li>
+<li>node_modules/ # ignore this in .gitignore file</li>
+<li>.gitignore</li>
+<li>package-lock.json</li>
+<li>package.json</li>
+<li>README.md</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>Create your homepage</li>
+</ol>
+<ul>
+<li>Going back in your site’s root directory (next to node_modules, package.json, etc.), create a file called index.md.</li>
+<li>TO KNOW: The content from index.md will be populated in base.liquid .</li>
+</ul>
+<ol start="5">
+<li>Start your server</li>
+</ol>
+<ul>
+<li>Run this command npx @11ty/eleventy --serve.</li>
+<li>A _site folder is automatically generated in which the index.html file will be automatically created.</li>
+</ul>
