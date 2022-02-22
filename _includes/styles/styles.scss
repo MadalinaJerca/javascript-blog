@@ -1,0 +1,20 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+
+/* overwrite Bulma Variables */
+// see https://bulma.io/documentation/customize/variables/
+$text-strong: $black;
+
+@import "../../node_modules/bulma/bulma";
+
+/*start custom SCSS */
+#tabbed-content .tab-content {
+	display: none;
+	&.is-active {
+		display: block;
+	}
+}
+
+
+@import 'reset';
+@import 'typography';
+@import 'variables';

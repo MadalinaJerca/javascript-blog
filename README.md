@@ -51,6 +51,29 @@
 - Going back to the ``_includes`` folder, create a new file called ``nav.liquid`` from where the user can access the home page and the first post's content.
 - In ``base.liquid`` file, above ``{{ content }}``, add this: ``{% include nav.liquid %}``.
 
+###
+- your-blog/
+    - dist
+    - node_modules/     
+    - src
+        - _includes/
+            - nav.liquid
+        - posts
+            - first-post.md
+            - posts.json
+        - styles
+            - reset.scss
+            - styles.scss
+        - base.liquid     # contains the basic HTML 
+        - styles.liquid
+    - eleventy.js
+    - .gitignore
+    - index.md
+    - package-lock.json 
+    - package.json      
+    - README.md
+###
+
 ### 7. Add styling
 - Create a new folder inside _includes called ``styles``. Inside this folder, you can create your CSS files.
 - To add these styles to your Eleventy site, create a ``styles.liquid`` file in your root directory and include your CSS by using 

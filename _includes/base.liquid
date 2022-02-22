@@ -7,18 +7,24 @@
     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <title>JS Blog</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link href="/style.scss" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.scss">
   </head>
   <body>
-    
     {% include 'nav.liquid' %}
 
-    {{ content }}
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          Hello World
+        </h1>
+        {{ content }}
+        <br>
 
-    {% if showPicture %}
-      <img src="https://via.placeholder.com/150" alt="A picture">
-    {% endif %}
-
+        {% if showPicture %}
+          <img src="https://via.placeholder.com/150" alt="A picture">
+        {% endif %}
+      </div>
+    </section>
   </body>
 </html>
 
