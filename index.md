@@ -10,5 +10,6 @@ layout: base.liquid
     <hr>
     <h2>{{ post.data.title }}</h2>
     <time>{{ post.data.date | date: "%B %d, %Y" }}</time>
+    <h2>{{ post.data.myNote }}</h2>
   </a>
 {% endfor %}
