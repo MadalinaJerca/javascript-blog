@@ -118,7 +118,7 @@
     - node_modules
     - src
         - _includes
-            - base.liquid    # contains the basic HTML
+            - base.liquid     # contains the basic HTML
             - nav.liquid
         - css
             - exercises.css
@@ -132,7 +132,7 @@
             - second-post.md
         - blog.md
         - exercises.md
-        - index.md           # homepage
+        - index.md            # homepage
     - .eleventy.js
     - .gitignore
     - package-lock.json 
