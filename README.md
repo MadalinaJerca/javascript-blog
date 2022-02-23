@@ -48,34 +48,93 @@
 - Going back to the ``_includes`` folder, create a new file called ``nav.liquid`` from where the user can access the home page and the first post's content.
 - In ``base.liquid`` file, above ``{{ content }}``, add this: ``{% include nav.liquid %}``.
 
-### 7. NEXT STEP: Add styling
-- Create a new folder inside _includes called ``styles``. Inside this folder, you can create your CSS files.
-- To add these styles to your Eleventy site, create a ``styles.liquid`` file in your root directory and include your CSS by using 
-``{% include styles/file_name.css %}``.
+- your-blog
+    - _includes
+        - base.liquid   # contains the basic HTML
+        - nav.liquid
+    - posts
+        - first-post.md
+        - posts.json 
+    - node_modules     
+    - .gitignore
+    - package-lock.json 
+    - package.json
+    - index.md      
+    - README.md
 
 ### 8. Add shortcodes
 - Shortcodes let you create custom, reusable HTML elements that you can embed inside your pages and posts with syntax like ``{% example "..." %}``
-- Create a file called ``.eleventy.js`` in the root directory of your site and insert the code I use.
+- Create a file called ``.eleventy.js`` in the root directory of your site and insert the code:
+    module.exports = function(eleventyConfig) {
+        
+        eleventyConfig.addPassthroughCopy('src/css');
+        eleventyConfig.addPassthroughCopy("src/img");
+        eleventyConfig.addPassthroughCopy("src/js");
 
-### 9. A better way of organizing folders
+        return {
+            passthroughFileCopy: true,
+            dir: {
+                input: "src",
+                output: "_site"
+            }
+        };
+    }
+
+### 7. A better way of organizing folders
 - your-blog
-    - _site
-    - dist
+    - _site                  # output
     - node_modules
-    - src
+    - src                    # input
         - _includes
+            - base.liquid    # contains the basic HTML
             - nav.liquid
         - posts
             - first-post.md
             - posts.json
-        - styles
-            - reset.scss
-            - styles.scss
-        - base.liquid      # contains the basic HTML 
-        - styles.liquid
-    - eleventy.js
+        - index.md           # homepage
+    - .eleventy.js
     - .gitignore
-    - index.md
+    - package-lock.json 
+    - package.json      
+    - README.md
+
+### 8. Add styling
+- Create a new folder inside ``src`` folder called ``css``. Inside this folder, you can create your CSS files. Right now let's create main.css file. 
+- In base.liquid, in head, insert this line ``<link rel="stylesheet" href="/css/main.css">``.
+
+### 9. Add JS
+- In base.liquid add this line of code:
+``{% block footer_additional_scripts %}{% endblock %}``
+
+- In javascript file, at the end of the code, add this:
+``{% block footer_additional_scripts %}``
+  ``<script type="text/javascript" src="/js/exercises.js"></script>``
+``{% endblock %}``
+
+### 9. My blog
+- your-blog
+    - _site
+    - node_modules
+    - src
+        - _includes
+            - base.liquid    # contains the basic HTML
+            - nav.liquid
+        - css
+            - exercises.css
+            - main.css
+        - img
+            - ...
+        - js
+            - exercises.js
+        - posts
+            - first-post.md
+            - posts.json
+            - second-post.md
+        - blog.md
+        - exercises.md
+        - index.md           # homepage
+    - .eleventy.js
+    - .gitignore
     - package-lock.json 
     - package.json      
     - README.md
