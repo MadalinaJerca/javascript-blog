@@ -65,7 +65,8 @@
 ### 8. Add shortcodes
 - Shortcodes let you create custom, reusable HTML elements that you can embed inside your pages and posts with syntax like ``{% example "..." %}``
 - Create a file called ``.eleventy.js`` in the root directory of your site and insert the code:
-    module.exports = function(eleventyConfig) {
+    
+       module.exports = function(eleventyConfig) {
         
         eleventyConfig.addPassthroughCopy('src/css');
         eleventyConfig.addPassthroughCopy("src/img");
@@ -78,7 +79,7 @@
                 output: "_site"
             }
         };
-    }
+       }
 
 ### 7. A better way of organizing folders
 - your-blog
