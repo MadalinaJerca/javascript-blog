@@ -24,7 +24,7 @@
 - Inside it, create a file named ``base.liquid`` by using ``cd _includes`` and ``touch base.liquid`` commands.
 - In ``base.liquid`` file, paste a basic HTML, which will be inserted into every page of our site.
 
-### 3. Now, your folder structure should look like this:
+- Now, your folder structure should look like this:
 - your-blog
     - _includes
         - base.liquid   # contains the basic HTML 
@@ -34,15 +34,15 @@
     - package.json      
     - README.md
 
-### 4. Create your homepage
+### 3. Create your homepage
 - Going back in your site’s root directory (next to node_modules, package.json, etc.), create a file called ``index.md``.
 - TO KNOW: The content from ``index.md`` will be populated in ``base.liquid`` by using ``{{ content }}``.
 
-### 5. Start your server
+### 4. Start your server
 - Run this command ``npx @11ty/eleventy --serve``. 
 - A ``_site`` folder is automatically generated in which the ``index.html`` file will be automatically created.
 
-### 6. Add your first post
+### 5. Add your first post
 - Create a ``posts`` folder. Inside it, create a file called ``first-post.md`` where you can add your content.
 - Inside the posts folder, create a file called ``posts.json`` to assign a default layout like base.liquid.
 - Going back to the ``_includes`` folder, create a new file called ``nav.liquid`` from where the user can access the home page and the first post's content.
@@ -62,7 +62,7 @@
     - index.md      
     - README.md
 
-### 8. Add shortcodes
+### 6. Add shortcodes
 - Shortcodes let you create custom, reusable HTML elements that you can embed inside your pages and posts with syntax like ``{% example "..." %}``
 - Create a file called ``.eleventy.js`` in the root directory of your site and insert the code:
     
@@ -112,7 +112,7 @@
   ``<script type="text/javascript" src="/js/exercises.js"></script>``
 ``{% endblock %}``
 
-### 9. My blog
+### 10. My blog
 - your-blog
     - _site
     - node_modules
@@ -124,7 +124,6 @@
             - exercises.css
             - main.css
         - img
-            - ...
         - js
             - exercises.js
         - posts
