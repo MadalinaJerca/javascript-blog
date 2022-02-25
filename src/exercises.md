@@ -3,7 +3,7 @@ title: My exercises
 layout: base.liquid
 ---
    
-<link rel="stylesheet" href="/css/styles/exercises.css"> 
+<link rel="stylesheet" href="/css/exercises.css"> 
 
 <div class="container navigation">
 <a href="#h4-numbers">NUMBERS</a>

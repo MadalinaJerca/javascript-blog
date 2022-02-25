@@ -1,16 +1,12 @@
 body {
-    /* font-family: 'Open Sans', sans-serif; */
     font-family: 'KoHo', sans-serif;
-    /* background-color: rgb(69, 69, 71); */
     background-color: #f1f1f1;
-    /* width: 60%; */
     margin: 0 auto;
 }
 
 .container {
     color: rgba(46, 63, 63, 0.692);
     background-color: #f1f1f1;
-    ;
 }
 
 .table {
