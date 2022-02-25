@@ -8,10 +8,7 @@ body {
 }
 
 .container {
-    /* color: #f8f9fa !important; */
     color: rgba(46, 63, 63, 0.692);
-    /* background-color: rgb(69, 69, 71); */
-    /* background-color: #ecebeb; */
     background-color: #f1f1f1;
     ;
 }
@@ -26,12 +23,10 @@ body {
 }
 
 .container .table {
-    /* color: #f8f9fa !important; */
-        color: #f9f8fa !important;
+    color: #f9f8fa !important;
 }
 
 h5 {
-    /* color: rgb(160, 189, 189); */
     color: rgba(46, 63, 63, 0.781);
     font-size: 1.1em;
     word-spacing: 0.1em;
