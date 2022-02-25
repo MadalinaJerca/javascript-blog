@@ -74,17 +74,19 @@ layout: base.liquid
 <div class="my-wall columns">
   <div class="column">
       <img class="set1-pictures" src=" img/im1.jpg" alt="img1" title="coding">
-      <img class="set1-pictures" src="img/im4.jpg" alt="img6" title="coding">
+      <img class="set1-pictures" src="img/im6.jpg" alt="img5" title="coding">
+      
   </div>
 
   <div class="column">
+      <img class="set1-pictures" src="img/im4.jpg" alt="img6" title="coding">
       <img class="set1-pictures" src="img/im2.jpg" alt="img2" title="coding">
-      <img class="set1-pictures" src="img/im5.jpg" alt="img4" title="coding">
   </div>
 
   <div class="column">
       <img class="set1-pictures" src="img/im3.jpg" alt="img3" title="coding">
-      <img class="set1-pictures" src="img/im6.jpg" alt="img5" title="coding">
+      <img class="set1-pictures" src="img/im5.jpg" alt="img4" title="coding">
+
   </div>
 </div>
 

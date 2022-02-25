@@ -31,6 +31,7 @@ html {
 
 body {
   background-color: #bfc1c3b5 !important;
+  overflow-x: hidden;
 }
 
 img {
@@ -387,7 +388,14 @@ footer .section {
   opacity: 1;
   left: 53%;
 }
+
+/* Right animation */
+.hero-body.rightInfo {
+  max-width: 1000px;
+  width: 100%;
+}
 /* End of Effect hero */
+
 .wrapper {
   align-self: flex-end;
 }
