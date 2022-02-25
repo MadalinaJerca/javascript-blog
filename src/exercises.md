@@ -2,8 +2,7 @@
 title: My exercises
 layout: base.liquid
 ---
-
-This is my second post.    
+   
 <link rel="stylesheet" href="/css/styles/exercises.css"> 
 
 <div class="container navigation">
