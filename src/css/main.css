@@ -5,7 +5,8 @@
     --heading-font: 'Josefin Slab', Georgia, serif;
     --body-font: 'Josefin Slab', Georgia, serif;
     --heading-color: #000;
-    --body-color: #3d3d3d;    
+    --body-color: #3d3d3d;
+    --background-color: rgb(24, 22, 23)
 }
 /* End of variables */
 
@@ -27,7 +28,7 @@ html {
 }
 
 body {
-  background-color: #bfc1c3b5;
+  background-color: var(--background-color);
   overflow-x: hidden;
 }
 
@@ -64,7 +65,7 @@ p, li {
 
 #navbarMenuHeroA a.navbar-item,
 #navbarMenuHeroA a.navbar-item.is-active { 
-  color: rgb(179, 179, 179) !important;
+  color: rgb(179, 179, 179);
   letter-spacing: .092em;
 }
 
@@ -73,7 +74,7 @@ a.navbar-item:hover {
   background-color: rgb(31 87 136 / 51%);
 }
 
-.navbar-item:before {
+/* .navbar-item:before {
   display:block;
   content: '';
   border-top: solid 5px rgb(31 87 136 / 51%);  
@@ -81,14 +82,20 @@ a.navbar-item:hover {
   transition: transform 250ms ease-in-out;
   padding-top: 0.4rem;
 }
+
 .navbar-item:hover:before { 
   transform: scaleX(1); 
-}
+} */
 
 /* logo */
 .navbar-brand a img {
   width: 280px;
   padding-top: 10px;
+}
+
+.navbar-burger {
+  color: #d7caca;
+  height: 4.25rem;
 }
 /* End of navigation bar */
 
@@ -121,7 +128,7 @@ a.navbar-item:hover {
 }
 
 .hero-body .hero-content {
-  background-color: rgb(31 87 136 / 51%) !important;
+  background-color: rgb(31 87 136 / 51%);
   opacity: 0.75;
   padding: 1rem 1rem;
   border-radius: 1rem;

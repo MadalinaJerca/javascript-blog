@@ -15,7 +15,7 @@ layout: base.liquid
               <h2 class="subtitle has-text-centered is-size-4-desktop">My name is Madalina and I'm a Junior Front-End Developer.
               <br> I have a diverse set of skills, ranging from HTML, CSS, <br>JavaScript, all the way to Python and MySql.
               </h2>
-              <a class="button is-light is-align-self-center" href="/blog">View My Profile</a>
+              <!-- <a class="button is-light is-align-self-center" href="/blog">View My Profile</a> -->
           </div>
         </div>
     </div>
@@ -23,7 +23,7 @@ layout: base.liquid
 
 <div class="container-code-images columns">
   <div class="column">
-      <img class="set1-pictures m-5" src=" img/im1.jpg" alt="img1" title="coding">
+      <img class="set1-pictures m-5" src="img/im1.jpg" alt="img1" title="coding">
       <img class="set1-pictures m-5" src="img/im6.jpg" alt="img5" title="coding">
   </div>
   <div class="column">
@@ -35,6 +35,8 @@ layout: base.liquid
       <img class="set1-pictures m-5" src="img/im5.jpg" alt="img4" title="coding">
   </div>
 </div>
+
+
 <div class="container has-text-centered laptop-section">
   <div class="mockup mockup-macbook loaded opened">
     <div class="part top">

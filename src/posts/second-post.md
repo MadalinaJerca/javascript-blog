@@ -1,7 +1,8 @@
 ---
 title: My second post
 date: 2022-02-23
-myNote: Another article.
+myNote: One of the most common guides we're asked to write is - "How to get rid of wrinkles. " No matter your gender or skin type, you’ll get wrinkles. Those small creases along our foreheads and at the corners of our eyes are a natural part of the human experience and they can surface as early as your mid-20s.
+showPicture: true
 ---
 
 <section class="section">
