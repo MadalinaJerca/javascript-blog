@@ -1,4 +1,4 @@
-.columns {
+.columns.blog-container {
     margin-top: 8rem;
 }
 
@@ -13,14 +13,16 @@
     margin-bottom: auto;
     margin-top: auto;
     margin-left: 3rem;
+    background-color: #f4f3f3;
+    background-image: linear-gradient(360deg, #d084d530 0%, #ffffff 84%);
 }
 
 .hero.blog {
     position: relative;
 }
+
 .blog-title {
     /* margin-top: 2rem; */
-    
     text-align: center;
     font-size: 3.5rem;
     letter-spacing: 0.3rem;
