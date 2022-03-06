@@ -1,19 +1,14 @@
 .columns {
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .blog-entry {
-    /* border: 1px solid #EBEBEB;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    background-color: #FFFFFF; */
     display: flex;
     padding: 13px;
     -moz-border-radius: 13px;
     box-shadow: 0 6px 19px rgb(22 10 28 / 9%);
     -webkit-box-shadow: 0 6px 19px rgb(22 10 28 / 9%);
     -moz-box-shadow: 0 6px 19px rgba(22, 10, 28, 0.09);
-    /* min-height: 420px; */
     min-width: 500px;
     margin-bottom: auto;
     margin-top: auto;
@@ -24,15 +19,17 @@
     position: relative;
 }
 .blog-title {
-    margin-top: 4rem;
+    /* margin-top: 2rem; */
+    
     text-align: center;
     font-size: 3.5rem;
     letter-spacing: 0.3rem;
-    color: darkgray;
-    text-transform: lowercase;
+    /* margin-left: 14rem; */
+    margin-bottom: auto;
+    margin-top: 0;
 }
 
-.column article {
+.column article  {
     display: flex !important;
     margin-bottom: 5rem;
 }
@@ -42,28 +39,19 @@
     height: 100%;
 }
 
-/* .card-image {
-    height: 700px;
-} */
-
-.entry-content p {
-    /* color: #f4f4f4; */
+.blog-entry-content p {
     color: #272727;
     font-family: roboto, sans-serif;
-    /* 'Josefin Slab', Georgia, serif; */
-    /* font-size: 1.4em; */
     font-size: 0.8rem;
 }
 
 .author a,
 time {
-    /* color: #f4f4f4; */
     color: #1d1d1de3;
     font-size: 0.7rem;
 }
 
-.entry-title a {
-    /* font-size: 1.6em; */
+.blog-entry-title a {
     color: #1d1d1de3;
 }
 
@@ -71,7 +59,7 @@ time {
     font-size: 0.7rem;
 }
 
-.blog_column1 {
+.blog_first-column {
     display: table-cell;
     vertical-align: top;
     text-align: center;
@@ -80,29 +68,20 @@ time {
     margin-right: 2rem;
 }
 
-.blog_column1 .date {
+.blog_first-column .code {
     padding: 0 20px;
-    border-right: 1px solid #6f6d6d;
+    border-right: 1px solid #3b3b3b;
     margin-left: 10px;
     color:lightslategray;
 }
 
-.blog_column1 .date_day {
-    /* font-size: 30px; */
-    font-weight: 400;
-
-    
-}
-.entry-meta .byline {
+.blog-entry-meta .profile_image_container {
     background-color: lightgray;
     width: 55px;
 }
 
 
-.blog_column1 .date_month {
-    /* color: #272727; */
-    /* line-height: 22px; */
-    /* letter-spacing: 2px; */
+.blog_first-column .code-letters {
     text-transform: uppercase;
     font-weight: 400;
     color:lightslategray;
@@ -110,20 +89,6 @@ time {
 
 article figure img {
     box-shadow: 3px 2px 12px 0px;
-}
-
-.blog-wrapper {
-    min-height: 420px;
-    min-width: 700px;
-}
-
-nav.navbar {
-    background-image: linear-gradient( 180deg, rgb(65 81 100) 45.9%, rgb(73 85 112 / 90%) 60.9%, rgb(217 226 233 / 42%) 97.1%);
-    height: 6rem;
-}
-
-.breadcrumb {
-    margin-top: 6rem;
 }
 
 .breadcrumb ul {
@@ -134,4 +99,49 @@ nav.navbar {
 .blog-entry.left-side {
     margin-left: 0;
     margin-right: 3rem;
+}
+
+img.splash {
+    width: 400px;
+    height: 400px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: absolute;
+    right: -10rem;
+    top: 20rem;
+    opacity: 0.8;
+}
+
+.hero.blog_hero-section:before {
+    background: none;
+}
+
+.hero.blog_hero-section {
+    background-color: #f4f3f3;
+    background-image: linear-gradient(180deg, #1118216b 0%, #ffffff 84%);
+}
+
+.hero .hero-body .title {
+    color: #4a4a4a;
+}
+
+.hero.is-link .tabs a {
+    color: #000000b4 !important;
+    font-family: 'Josefin Slab', Georgia, serif;
+}
+
+@media screen and (min-width: 769px) { 
+    .hero.is-medium .hero-body {
+    padding: 6rem 1.5rem;
+    } 
+}
+
+@media screen and (min-width: 769px) {
+    .hero.is-medium .hero-body {
+        padding-bottom: 3rem;
+    }
+}
+
+#navbarMenuHeroA a.navbar-item, #navbarMenuHeroA a.navbar-item.is-active {
+    color: rgb(51 49 49);
 }
