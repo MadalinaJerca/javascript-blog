@@ -11,8 +11,8 @@ layout: base.liquid
         <!-- Hero content -->
         <div class="hero-body is-flex-direction-column is-justify-content-center rightInfo">
           <div class="container hero-content has-text-centered is-flex is-flex-direction-column is-justify-content-center">
-              <h1 class="title has-text-centered is-size-1-desktop">Welcome to my profile!</h1>
-              <h2 class="subtitle has-text-centered is-size-4-desktop">My name is Madalina and I'm a Junior Front-End Developer.
+              <h1 class="title has-text-centered is-size-3-desktop">Welcome to my profile!</h1>
+              <h2 class="subtitle has-text-centered is-size-6-desktop">My name is Madalina and I'm a Junior Front-End Developer.
               <br> I have a diverse set of skills, ranging from HTML, CSS, <br>JavaScript, all the way to Python and MySql.
               </h2>
               <!-- <a class="button is-light is-align-self-center" href="/blog">View My Profile</a> -->

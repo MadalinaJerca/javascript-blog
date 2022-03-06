@@ -1,7 +1,7 @@
 ---
 title: My first post
 date: 2022-02-06
-myNote: Pandemic stress-induced acne, including the "maskne" caused by our face coverings, have driven the skin-care discussion this year discussion this year discussion this year discussion this year discussion this year discussion this year.
+myNote: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
 showPicture: true
 ---
 

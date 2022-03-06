@@ -2,32 +2,29 @@
     margin-top: 10rem;
 }
 
-.profile_image {
-    border-radius: 50%;
-}
-
 .blog-entry {
     /* border: 1px solid #EBEBEB;
     border-radius: 13px;
     -webkit-border-radius: 13px;
     background-color: #FFFFFF; */
-    padding: 33px;
+    display: flex;
+    padding: 13px;
     -moz-border-radius: 13px;
     box-shadow: 0 6px 19px rgb(22 10 28 / 9%);
     -webkit-box-shadow: 0 6px 19px rgb(22 10 28 / 9%);
     -moz-box-shadow: 0 6px 19px rgba(22, 10, 28, 0.09);
-    min-height: 420px;
-    min-width: 700px;
+    /* min-height: 420px; */
+    min-width: 500px;
     margin-bottom: auto;
     margin-top: auto;
-    margin-left: 4rem;
+    margin-left: 3rem;
 }
 
 .hero.blog {
     position: relative;
 }
 .blog-title {
-    margin-top: 10rem;
+    margin-top: 4rem;
     text-align: center;
     font-size: 3.5rem;
     letter-spacing: 0.3rem;
@@ -41,26 +38,100 @@
 }
 
 .card-image figure {
-    min-width: 500px;
+    min-width: 400px;
     height: 100%;
 }
 
-.card-image {
+/* .card-image {
     height: 700px;
-}
+} */
 
 .entry-content p {
-    color: #f4f4f4;
-    font-family: 'Josefin Slab', Georgia, serif;
-    font-size: 1.4em;
+    /* color: #f4f4f4; */
+    color: #272727;
+    font-family: roboto, sans-serif;
+    /* 'Josefin Slab', Georgia, serif; */
+    /* font-size: 1.4em; */
+    font-size: 0.8rem;
 }
 
 .author a,
-time, 
-.entry-title a {
-    color: #e5e1e1e3;
+time {
+    /* color: #f4f4f4; */
+    color: #1d1d1de3;
+    font-size: 0.7rem;
 }
 
 .entry-title a {
-    font-size: 1.6em;
+    /* font-size: 1.6em; */
+    color: #1d1d1de3;
+}
+
+.read-more {
+    font-size: 0.7rem;
+}
+
+.blog_column1 {
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+    width: 70px;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+
+.blog_column1 .date {
+    padding: 0 20px;
+    border-right: 1px solid #6f6d6d;
+    margin-left: 10px;
+    color:lightslategray;
+}
+
+.blog_column1 .date_day {
+    /* font-size: 30px; */
+    font-weight: 400;
+
+    
+}
+.entry-meta .byline {
+    background-color: lightgray;
+    width: 55px;
+}
+
+
+.blog_column1 .date_month {
+    /* color: #272727; */
+    /* line-height: 22px; */
+    /* letter-spacing: 2px; */
+    text-transform: uppercase;
+    font-weight: 400;
+    color:lightslategray;
+}
+
+article figure img {
+    box-shadow: 3px 2px 12px 0px;
+}
+
+.blog-wrapper {
+    min-height: 420px;
+    min-width: 700px;
+}
+
+nav.navbar {
+    background-image: linear-gradient( 180deg, rgb(65 81 100) 45.9%, rgb(73 85 112 / 90%) 60.9%, rgb(217 226 233 / 42%) 97.1%);
+    height: 6rem;
+}
+
+.breadcrumb {
+    margin-top: 6rem;
+}
+
+.breadcrumb ul {
+    font-family: 'Josefin Slab', Georgia, serif;
+    font-size: 1rem
+}
+
+.blog-entry.left-side {
+    margin-left: 0;
+    margin-right: 3rem;
 }

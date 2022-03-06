@@ -3,7 +3,8 @@
     --font-size: 18px;
     --line-height: 1.5;
     --heading-font: 'Josefin Slab', Georgia, serif;
-    --body-font: 'Josefin Slab', Georgia, serif;
+    /* --body-font: 'Josefin Slab', Georgia, serif; */
+    --body-font: roboto,sans-serif;
     --heading-color: #000;
     --body-color: #3d3d3d;
     --background-color: rgb(24, 22, 23)
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   overflow-x: hidden;
 }
 
@@ -67,6 +68,7 @@ p, li {
 #navbarMenuHeroA a.navbar-item.is-active { 
   color: rgb(179, 179, 179);
   letter-spacing: .092em;
+  font-size: 0.7rem;
 }
 
 a.navbar-item.is-active, 
@@ -89,7 +91,7 @@ a.navbar-item:hover {
 
 /* logo */
 .navbar-brand a img {
-  width: 280px;
+  width: 210px;
   padding-top: 10px;
 }
 
@@ -199,7 +201,7 @@ a.navbar-item:hover {
 .animation-hero-section:hover .rightInfo,
 .animation-hero-section:active .rightInfo {
   opacity: 1;
-  left: 53%;
+  left: 40%;
 }
 
 .hero-body.rightInfo {
@@ -213,7 +215,7 @@ a.navbar-item:hover {
   width: 650px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 5px 5px 10px;
+  box-shadow: 3px 5px 10px;
   /* Animation Images */
   -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -314,7 +316,7 @@ a.navbar-item:hover {
 
 /* FOOTER */
 .footer {
-  background-color:#151617 !important;
+  background-color: var(--background-color);
   margin-top: 55px;
   padding: 1rem 3rem 1rem 3rem;    
 }
@@ -361,7 +363,7 @@ footer .section {
   border: 1px solid #25232370;
   -webkit-box-shadow: 0px -4px 3px rgb(50 50 50 / 75%);
   -moz-box-shadow: 0px -4px 3px rgba(88, 86, 86, 0.603);
-  box-shadow: 0px -8px 20px 4px rgb(89 87 87 / 75%);
+  /* box-shadow: 0px -8px 20px 4px rgb(89 87 87 / 75%); */
  
 }
 /* END OF FOOTER */
