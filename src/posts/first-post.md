@@ -6,7 +6,7 @@ showPicture: true
 ---
 
 <section class="section">
-<div class="container">
-<h1 class="title">This is my first post.</h1>
-</div>
+    <div class="container">
+        <h1 class="title">This is my first post.</h1>
+    </div>
 </section>
