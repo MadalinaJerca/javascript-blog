@@ -1,60 +1,6 @@
-/* Variables */
-:root { 
-  --font-size: 18px;
-  --line-height: 1.5;
-  --heading-font: 'Barlow', sans-serif;    
-  --body-font: 'Barlow', sans-serif;
-  --heading-color: #000;
-  --body-color: #3d3d3d;
-  --background-color: rgb(24, 22, 23)
-}
-/* End of variables */
-
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-}
-
-html {
-  font-family: var(--body-font);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-  color: var(--body-color);
-}
-
 body {
-  overflow-x: hidden;
+  font-family: 'Barlow', sans-serif;
 }
-
-img {
-  display: block;
-  max-width: 100%;
-}
-/* End of reset CSS */
-
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--heading-color);
-  font-weight: 700;
-}
-
-h1 { font-size: 2rem; }
-h2 { font-size: 1.75rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1rem; }
-h6 { font-size: 0.8rem; }
-
-p, li {
-  margin: 0.5rem 0;
-}
-/* End of typography */
 
 /* Navigation bar */
 .hero-head nav.navbar.hp-nav {
@@ -64,7 +10,7 @@ p, li {
 
 #navbarMenuHeroA a.navbar-item,
 #navbarMenuHeroA a.navbar-item.is-active { 
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: .092em;
   color: rgb(179, 179, 179);
 }
@@ -305,8 +251,9 @@ footer .columns {
   gap: 0.3rem;
 }
 
-footer .about_content-footer, footer .sublink, footer .copyright-text{
-  font-size: 0.7rem;
+footer .about_content-footer, 
+footer .sublink, footer .copyright-text{
+  font-size: 0.8rem;
 }
 
 footer .sublink {
@@ -371,4 +318,14 @@ footer a:hover {
     margin-right: auto !important;
     width: 300px;
   }
+}
+
+.title.play {
+    position: absolute;
+    top: 8rem;
+    left: 43%;
+}
+
+.container.play {
+  position: relative;
 }

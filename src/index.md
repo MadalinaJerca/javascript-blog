@@ -38,6 +38,9 @@ layout: base.liquid
 </div>
 
 <!-- LAPTOP SECTION -->
+<div class="container play">
+  <h1 class="title play">PRESS PLAY</h1>
+</div>
 <div class="container has-text-centered laptop-section">
   <div class="mockup-macbook loaded opened">
     <div class="part top-macbook">

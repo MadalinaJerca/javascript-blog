@@ -6,27 +6,23 @@ layout: base.liquid
 <link rel="stylesheet" href="/css/blog.css">
 
 <!-- BLOG TITLE -->
-<section class="hero is-large is-link blog_hero-section">
-  <div class="hero-body">
-    <h1 class="title is-size-4 blog-title"><span><</span><br>the best javascript blog<br>/></h1>
+<section class="hero is-large blog_hero-section">
+  <div class="hero-body is-flex is-justify-content-center is-align-items-center">
+    <h1 class="title is-size-4 blog-title has-text-centered"><span><</span><br>the best javascript blog<br>/></h1>
   </div>
+    <!-- SPLASH IMAGE -->
+  <img src="/img/splash.png" class="splash">    
 </section>
-
-<!-- SPLASH IMAGE -->
-<img src="/img/splash.png" class="splash">
 
 <!-- ARTICLES CONTAINER -->
 <div class="container">
 <div class="columns is-flex-wrap-wrap px-5 blog-container">
-<div class="column is-half mb-4 p-4">
 {% for post in collections.posts reversed %}
-
-<!-- FIRST ARTICLE -->
+<div class="column is-half mb-4 p-4">
 <article>
     <div class="card-image hover01">
         <figure class="image">
             <img src="/img/test.jpg" alt="Coding" width="380">
-            <!-- <img src="/img/card-image.jpg" alt="Coding" width="400" height="600"> -->
         </figure>
     </div>
     <div class="blog-entry">
@@ -39,7 +35,7 @@ layout: base.liquid
     <div class="column blog_second-column">
         <!-- BLOG HEADER -->
         <header class="blog-entry-header">
-            <h2 class="blog-entry-title mt-4"><a href="#">{{ post.data.title }}</a></h2>
+            <h2 class="blog-entry-title mt-4"><a href="#" class="is-size-4">{{ post.data.title }}</a></h2>
             <div class="blog-entry-meta is-flex">
                 <div class="profile_image_container"> 
                     <img src="/img/madi.png" class="profile_image pt-1" height="50" width="50" alt="Madalina Jerca">
@@ -65,7 +61,7 @@ layout: base.liquid
     </div>
 </article>
 
-<!-- SECOND ARTICLE -->
+<!-- BLOG DIVIDERS -->
 <article>
     <div class="blog-entry left-side">  
     <div class="column blog_second-column">
@@ -83,9 +79,7 @@ layout: base.liquid
     </div>
     </div>
 </article>
-
-{% endfor %}
-
 </div>
+{% endfor %}
 </div>
 </div>
